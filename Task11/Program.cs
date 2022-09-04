@@ -11,15 +11,15 @@
 // int secondDigit = number % 10;
 // Console.WriteLine($"число {number} = {firstDigit} , {secondDigit}");    
 
+// Решение 2
+// int number = new Random().Next(100, 1000);                             
+// Console.WriteLine(number);
 
-int number = new Random().Next(100, 1000);                              Решение 2
-Console.WriteLine(number);
+// int num1 = number / 100;
+// int num2 = number % 10;
 
-int num1 = number / 100;
-int num2 = number % 10;
-
-int result = num1 * 10 + num2;
-Console.WriteLine($"Число без средней цифры равно {result}");
+// int result = num1 * 10 + num2;
+// Console.WriteLine($"Число без средней цифры равно {result}");
 
 
 int number = new Random().Next(100, 1000);
