@@ -5,7 +5,7 @@
 Console.Clear();
 Console.WriteLine("Введите номер от 1 до 7");
 int day = Convert.ToInt32(Console.ReadLine());
-if (day == 1) Console.Write("Понедельник");
+else if (day == 1) Console.Write("Понедельник");
 
 else if (day == 2) Console.Write("Вторник");
 else if (day == 3) Console.Write("Среда");

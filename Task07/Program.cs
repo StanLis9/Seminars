@@ -9,9 +9,11 @@
 Console.Clear();
 Console.Write("Введите трехзначное число: ");
 int num1 = Convert.ToInt32(Console.ReadLine());
-if (num1 < 1000 && num1 > 99)
+if (num1  < 1000 && num1 > 99 )
 {
-    Console.WriteLine(num1 % 10);
+    Console.WriteLine( num1 % 10);
 }
 else
-    Console.WriteLine($"Неверное число");
+{
+    Console.WriteLine( $"Неверное число");
+}
