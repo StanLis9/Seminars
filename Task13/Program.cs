@@ -9,51 +9,78 @@ Console.Clear();
 Console.Write("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-while (num >=100 && num<=1000)
-{
-    
-    Console.WriteLine(num%10);
-    
-    break;
-    
-}
-if (num>=1000)                        
-{
-    num /=10;
-    Console.WriteLine(num%10);
-}
-if (num <100)
-{
-    Console.WriteLine("Третьей цифры нет");
-}
-    
-    
-
-    
-    
-
-        
-
-    
-
-
-
-
-
-
-// while (n0<=num || n0>100 && n0<1000)
+// while (num >= 100 && num <= 1000)
 // {
-//     Console.WriteLine(num%10);
-//     n0=(n0+1)/10;
+
+//     Console.WriteLine(num % 10);
+
+//     break;
+
+// }
+// if (num >= 1000)
+// {
+//     num /= 10;
+//     Console.WriteLine(num % 10);
+
+// }
+// else if (num >= 10000)
+// {
+//     num /= 100;
+//     Console.WriteLine(num % 10 );
+// }
+// else if (num < 100)
+// {
+//     Console.WriteLine("Третьей цифры нет");
+
 // }
 
 
-// Console.Clear();
-// Console.Write("Введите число: ");
-// int num = Convert.ToInt32(Console.ReadLine());
-// int i = 0;
 
 
 
+// Подскажите как правильно ее решать??? 
 
 
+while (num > 100 && num < 1000)
+{
+    Console.WriteLine(num % 10);
+    break;
+}
+    if (num > 1000)
+    {
+        int num2 = num / 10;
+    
+        while (num2 > 100 && num2 <= 1000)
+        {
+        Console.WriteLine(num2 % 10);
+        break;
+        }
+    }   
+    if (num > 10000)
+    {
+        int num3 = num / 100;
+    
+        while (num3 > 100 && num3 <= 1000)
+        {
+        Console.WriteLine(num3 % 10);
+        break;
+        }
+    } 
+    if (num > 100000)
+    {
+        int num4 = num / 1000;
+    
+        while (num4 > 100 && num4 <= 1000)
+        {
+        Console.WriteLine(num4 % 10);
+        break;
+        }
+    }
+else if (num<100)
+{
+         Console.WriteLine("Нет третьего числа");
+}
+// else
+// {
+//     Console.WriteLine("Неверно");
+// }

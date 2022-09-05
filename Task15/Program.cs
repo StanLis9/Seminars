@@ -13,8 +13,10 @@ else if (day == 2) Console.Write("Нет");
 else if (day == 3) Console.Write("Нет");
 else if (day == 4) Console.Write("Нет");
 else if (day == 5) Console.Write("Нет");
-else if (day == 6) Console.Write("Да");
-else if (day == 7) Console.Write("Да");
+else if (day == 6 || day == 7) 
+{
+    Console.Write("Да");
+}
 else Console.Write("Нет такого дня");
 
 

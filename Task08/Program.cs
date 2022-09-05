@@ -7,7 +7,7 @@ int n = Convert.ToInt32(Console.ReadLine());
 int i = 2;
 while (i <= n )
 {
-    Console.Write($"{i} ");
+    Console.WriteLine($"{i} ");
     i+=2;
 }
 

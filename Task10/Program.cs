@@ -5,8 +5,17 @@
 // 918 -> 1
 
 Console.Clear();
-Console.Write("Введите целое число: ");
+Console.Write("Введите трехзачное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-int FirstDigit = num/10;
-Console.WriteLine(FirstDigit%10);
+if  ( num > 100 && num < 1000 ) 
+{
+    
+    Console.WriteLine(num/10%10);
+    
+}
+else 
+{
+    Console.Write( "Неверное число" );
+}
+
