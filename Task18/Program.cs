@@ -16,5 +16,5 @@ string Quarter(string quart1)
     return "Введен некорретный номер четверти";
 
 }
-string result = Quarter (quarter);
+string result = Quarter(quarter);
 Console.WriteLine(result);
