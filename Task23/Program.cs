@@ -3,27 +3,28 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-// Console.Clear();
-// Console.WriteLine("Введите число");
 
-// int num = Convert.ToInt32(Console.ReadLine());
-// int count = 1;
-// void Triple(int num1, int count1)
+// Console.Clear();
+// Console.WriteLine("Введите число: ");
+// int num = Convert.ToInt32(Console.ReadLine( ));
+
+// for (int i = 1; i<= num; i++)
 // {
-//     while (count1 <= num1)
-//     {
-//         Console.WriteLine($"{count1} - {count1 * count1 * count1}");
-//         count1++;
-//     }
+//     Console.Write($"{i*i*i} ");
 // }
-// Triple(num, count);
 
 
 Console.Clear();
-Console.WriteLine("Введите число: ");
-int num = Convert.ToInt32(Console.ReadLine( ));
+Console.WriteLine("Введите число");
 
-for (int i = 1; i<= num; i++)
+int num = Convert.ToInt32(Console.ReadLine());
+int count = 1;
+void Triple(int num1, int count1)
 {
-    Console.Write($"{i*i*i} ");
+    while (count1 <= num1)
+    {
+        Console.WriteLine($"{count1} - {count1 * count1 * count1}");
+        count1++;
+    }
 }
+Triple(num, count);
