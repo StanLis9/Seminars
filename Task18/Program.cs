@@ -4,7 +4,7 @@
 Console.Clear();
 
 Console.WriteLine("Введите номер четверти (1-4)");
-string quarter = Console.ReadLine();
+string quarter =(Console.ReadLine());
 
 
 string Quarter(string quart1)
@@ -13,7 +13,7 @@ string Quarter(string quart1)
     if (quart1 == "2") return "Вторая четверть";
     if (quart1 == "3") return "Третья четверть";
     if (quart1 == "4") return "Четвертая четверть";
-    return "Введен некорретный номер четверти";
+    return ("Введен некорретный номер четверти");
 
 }
 string result = Quarter(quarter);
