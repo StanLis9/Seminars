@@ -7,10 +7,10 @@ int[] arr = new int[8];
 
 void newArr(int[] arr1)
 {
-    Random digit = new Random();
+    var digit = new Random();
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = digit.Next(0, 8);
+        arr[i] = digit.Next(0, 33);
     }
 }
 void PrintArray(int[] arr1)
