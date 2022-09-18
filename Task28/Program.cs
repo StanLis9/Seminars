@@ -14,7 +14,7 @@ double ProductOfNumber(double number1)
     int count = 1;
     for (int i = 1; i <= number; i++)
     {
-        count = count*i;
+        count*= i;
     }
     
        
