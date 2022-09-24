@@ -6,17 +6,19 @@
 Console.Clear();
 Console.WriteLine();
 
-decimal[] CreateArrayRndInt(int size, int min, int max)
+double[] CreateArrayRndInt(int size, int min, int max)
 {
-    decimal[] array = new decimal[size];
+    double[] array = new double [size];
     Random rnd = new Random();
+    
+
     for (int i = 0; i < size; i++)
     {
-        array[i] = rnd.Next(min, max + 1);
+        array[i] =  rnd.Next(0,2 ) + rnd.NextDouble();
     }
     return array;
 }
-void PrintArray(decimal[] array)
+void PrintArray(double[] array)
 {
     Console.Write("[");
     for (int i = 0; i < array.Length; i++)
@@ -27,23 +29,24 @@ void PrintArray(decimal[] array)
     Console.Write("]");
 }
 
-void Difference(decimal[] array)
-{
+// void Difference(decimal[] array)
+// {
 
-    decimal min = array[0];
-    decimal max = array[0];
-    for (int i = 0; i < array.Length; i++)
-    {
-        if (array[i] < min)
-            min = array[i];
+//     decimal min = array[0];
+//     decimal max = array[0];
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         if (array[i] < min)
+//             min = array[i];
 
 
-        if (array[i] > max)
-            max = array[i];
-    }
-    Console.WriteLine(max-min);
-}
-decimal[] NewMassive = CreateArrayRndInt(5, 1, 2);
+//         if (array[i] > max)
+//             max = array[i];
+//     }
+//     Console.WriteLine(max-min);
+// }
+double[] NewMassive = CreateArrayRndInt(3,1,8);
+
 PrintArray(NewMassive);
-Console.WriteLine();
-Difference(NewMassive);
+// Console.WriteLine();
+// Difference(NewMassive);

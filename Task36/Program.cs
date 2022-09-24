@@ -32,7 +32,7 @@ int SumDigitNotEvenPosition(int[] array)
 {
     
     int sumnoteven=0;
-    for (int i = 0; i < array.Length; i+=2)
+    for (int i = 1; i < array.Length; i+=2)
     {
         sumnoteven += array[i];
     }
