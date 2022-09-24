@@ -1,20 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-
-
-int[,] ChangeMatrixRndInt(int[,] array)
-{
-    for (int i = 0; i < array.GetLength(0); i += 2)
-    {
-        for (int j = 0; j < array.GetLength(1); j += 2)
-        {
-            array[i, j] *= array[i, j];
-        }
-    }
-    return array;
-}
-
-
+﻿
 // Задача 49: Задайте двумерный массив. Найдите элементы, у
 // которых оба индекса чётные, и замените эти элементы на их
 // квадраты.
